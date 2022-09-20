@@ -51,7 +51,7 @@ resource "azurerm_network_interface" "myterraformnic" {
     name                      = "myNIC"
     location                  = "${var.location}"
     resource_group_name       = "${var.resource_group_name}"
-    network_security_group_id = "${azurerm_network_security_group.myterraformnsg.id}"
+    #network_security_group_id = "${azurerm_network_security_group.myterraformnsg.id}"
 
     ip_configuration {
         name                          = "myNicConfiguration"
