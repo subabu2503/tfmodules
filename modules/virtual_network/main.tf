@@ -6,9 +6,6 @@ resource "azurerm_virtual_network" "myterraformnetwork" {
     location            = "${var.location}"
     resource_group_name = "${var.resource_group_name}"
 
-    tags {
-        environment = "Terraform Demo"
-    }
 }
 
 # Create subnet
